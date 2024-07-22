@@ -11,16 +11,9 @@
 		B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20842C4DF775003EEEF8 /* ContentView.swift */; };
 		B52F20872C4DF776003EEEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20862C4DF776003EEEF8 /* Assets.xcassets */; };
 		B52F208A2C4DF776003EEEF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */; };
-		B5430CD62C4DF82B00EBB254 /* TableViewNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */; };
-		B5430CD82C4DF84000EBB254 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD72C4DF84000EBB254 /* GridView.swift */; };
-		B5430CDA2C4DF95100EBB254 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD92C4DF95100EBB254 /* ItemStore.swift */; };
+		B5430CDA2C4DF95100EBB254 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD92C4DF95100EBB254 /* ViewModel.swift */; };
 		B5430CDC2C4EAD5C00EBB254 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */; };
-		B5430CDE2C4EAEF300EBB254 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDD2C4EAEF300EBB254 /* ListView.swift */; };
 		B5430CE02C4EB12E00EBB254 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDF2C4EB12E00EBB254 /* RowView.swift */; };
-		B5430CE22C4EBF0700EBB254 /* ListGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE12C4EBF0700EBB254 /* ListGridView.swift */; };
-		B5430CE42C4EC08600EBB254 /* VStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE32C4EC08600EBB254 /* VStackView.swift */; };
-		B5430CE62C4EC75F00EBB254 /* TableViewCompact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */; };
-		B5430CE82C4EC9C700EBB254 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */; };
 		B5430CEA2C4ED0E700EBB254 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B5430CE92C4ED0E700EBB254 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -30,16 +23,9 @@
 		B52F20842C4DF775003EEEF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B52F20862C4DF776003EEEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNormal.swift; sourceTree = "<group>"; };
-		B5430CD72C4DF84000EBB254 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
-		B5430CD92C4DF95100EBB254 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		B5430CD92C4DF95100EBB254 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
-		B5430CDD2C4EAEF300EBB254 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B5430CDF2C4EB12E00EBB254 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		B5430CE12C4EBF0700EBB254 /* ListGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGridView.swift; sourceTree = "<group>"; };
-		B5430CE32C4EC08600EBB254 /* VStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackView.swift; sourceTree = "<group>"; };
-		B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCompact.swift; sourceTree = "<group>"; };
-		B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
 		B5430CE92C4ED0E700EBB254 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,16 +62,9 @@
 			children = (
 				B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */,
 				B52F20842C4DF775003EEEF8 /* ContentView.swift */,
-				B5430CDD2C4EAEF300EBB254 /* ListView.swift */,
-				B5430CE32C4EC08600EBB254 /* VStackView.swift */,
-				B5430CD72C4DF84000EBB254 /* GridView.swift */,
-				B5430CE12C4EBF0700EBB254 /* ListGridView.swift */,
-				B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */,
-				B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */,
-				B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */,
-				B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */,
 				B5430CDF2C4EB12E00EBB254 /* RowView.swift */,
-				B5430CD92C4DF95100EBB254 /* ItemStore.swift */,
+				B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */,
+				B5430CD92C4DF95100EBB254 /* ViewModel.swift */,
 				B52F20862C4DF776003EEEF8 /* Assets.xcassets */,
 				B52F20882C4DF776003EEEF8 /* Preview Content */,
 			);
@@ -171,16 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5430CE62C4EC75F00EBB254 /* TableViewCompact.swift in Sources */,
 				B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */,
 				B5430CDC2C4EAD5C00EBB254 /* ItemView.swift in Sources */,
-				B5430CD62C4DF82B00EBB254 /* TableViewNormal.swift in Sources */,
-				B5430CE42C4EC08600EBB254 /* VStackView.swift in Sources */,
-				B5430CE22C4EBF0700EBB254 /* ListGridView.swift in Sources */,
-				B5430CE82C4EC9C700EBB254 /* TableViewItems.swift in Sources */,
-				B5430CDE2C4EAEF300EBB254 /* ListView.swift in Sources */,
-				B5430CD82C4DF84000EBB254 /* GridView.swift in Sources */,
-				B5430CDA2C4DF95100EBB254 /* ItemStore.swift in Sources */,
+				B5430CDA2C4DF95100EBB254 /* ViewModel.swift in Sources */,
 				B52F20832C4DF775003EEEF8 /* movable_gridrowsApp.swift in Sources */,
 				B5430CE02C4EB12E00EBB254 /* RowView.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  RowView.swift
+//  ItemView.swift
 //  movable-gridrows
 //
 //  Created by Pete Maiser on 7/22/24.
@@ -18,5 +18,5 @@ struct ItemView: View {
 }
 
 #Preview {
-    ItemView(columWidths: (200,200), spacerWidth: 50, item: Item())
+    ItemView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, item: Item())
 }

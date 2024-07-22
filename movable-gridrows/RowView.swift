@@ -1,5 +1,5 @@
 //
-//  HeaderView.swift
+//  RowView.swift
 //  movable-gridrows
 //
 //  Created by Pete Maiser on 7/22/24.
@@ -40,5 +40,8 @@ struct RowView: View {
 }
 
 #Preview {
-    RowView(columWidths: (200,200), spacerWidth: 50, strings: ("Number","Name"))
+    VStack {
+        RowView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, strings: ("Number","Name"), isBold: true)
+        RowView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, strings: ("\(Item().id)",Item().name))
+    }
 }

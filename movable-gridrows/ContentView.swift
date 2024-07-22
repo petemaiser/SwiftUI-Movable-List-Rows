@@ -8,37 +8,53 @@
 import SwiftUI
 
 struct ContentView: View {
-      
+    
+    @StateObject var viewModel: ViewModel
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                Text("Sample Editable Item View")
-                    .bold()
-                NavigationLink(destination: ListView(), label: {Text("List of custom Item Views")})
-                    .padding()
-                Spacer()
-                Text("Similar Sample Views - Editing not implemented")
-                    .bold()
-                NavigationLink(destination: VStackView(), label: {Text("VStack of custom Item Views")})
-                    .padding()
-                NavigationLink(destination: GridView(), label: {Text("Grid of custom Item Views")})
-                    .padding()
-                NavigationLink(destination: ListGridView(), label: {Text("List - Grid - GridRows")})
-                    .padding()
-                NavigationLink(destination: TableViewNormal(), label: {Text("Table")})
-                    .padding()
-                NavigationLink(destination: TableViewCompact(), label: {Text("Table as 1 column (compact)")})
-                    .padding()
-                NavigationLink(destination: TableViewItems(), label: {Text("Table of Item Views")})
-                    .padding()
-                Spacer()
+        List
+        {
+            // Header
+            RowView(columWidths: viewModel.settings.columWidths, spacerWidth: viewModel.settings.spacerWidth, strings: ("Number", "Name"), isBold: true)
+            
+            // Items
+            ForEach(viewModel.items.indices, id: \.self) { i in
+                ItemView(columWidths: viewModel.settings.columWidths, spacerWidth: viewModel.settings.spacerWidth, item: viewModel.items[i])
             }
-            .padding()
+            .onDelete(perform: delete)
+            .onMove(perform: move)
+            
+            // Edit Buttons
+            HStack {
+                Spacer()
+                    .frame(width:CGFloat(integerLiteral:viewModel.settings.spacerWidth))
+                Button(action: add) {
+                    Image(systemName: "plus")
+                }
+                .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.0), maxWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.0))
+                    .buttonStyle(BorderlessButtonStyle())
+                EditButton()
+                    .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.1), maxWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.1))
+                    .buttonStyle(BorderlessButtonStyle())
+                Spacer()
+                    .frame(width:CGFloat(integerLiteral:viewModel.settings.spacerWidth))
+            }
         }
+    }
+    
+    private func add() {
+        viewModel.addItem()
+    }
+    
+    private func delete(offsets: IndexSet) {
+        viewModel.items.remove(atOffsets: offsets)
+    }
+
+    private func move(offsets: IndexSet, destination: Int) {
+        viewModel.items.move(fromOffsets: offsets, toOffset: destination)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: ViewModel())
 }
