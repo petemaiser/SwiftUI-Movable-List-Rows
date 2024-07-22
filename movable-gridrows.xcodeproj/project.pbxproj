@@ -76,8 +76,8 @@
 			children = (
 				B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */,
 				B52F20842C4DF775003EEEF8 /* ContentView.swift */,
-				B5430CE32C4EC08600EBB254 /* VStackView.swift */,
 				B5430CDD2C4EAEF300EBB254 /* ListView.swift */,
+				B5430CE32C4EC08600EBB254 /* VStackView.swift */,
 				B5430CD72C4DF84000EBB254 /* GridView.swift */,
 				B5430CE12C4EBF0700EBB254 /* ListGridView.swift */,
 				B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */,

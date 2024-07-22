@@ -10,26 +10,47 @@ import SwiftUI
 struct ListView: View {
     
     @State private var itemStore = ItemStore.getSharedStore
-    @State private var isEditing = false
+    @State private var editMode = EditMode.inactive
 
-    let w1 = 200
-    let w2 = 200
+    let columWidths = (125,200)
+    let spacerWidth = 50
     
     var body: some View {
         List
         {
-            RowView(columWidths: (w1,w2), strings: ("Number", "Name"), isBold: true)
+            RowView(columWidths: columWidths, spacerWidth: spacerWidth, strings: ("Number", "Name"), isBold: true)
             ForEach(itemStore.list.indices, id: \.self) { i in
-                ItemView(columWidths: (w1,w2), item: itemStore.list[i])
+                ItemView(columWidths: columWidths, spacerWidth: spacerWidth, item: itemStore.list[i])
             }
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(isEditing ? "Done" : "Edit") {
-                    withAnimation { isEditing.toggle() }
+            .onDelete(perform: delete)
+            .onMove(perform: move)
+            HStack {
+                Spacer()
+                    .frame(width:CGFloat(integerLiteral:spacerWidth))
+                Button(action: add) {
+                    Image(systemName: "plus")
                 }
+                    .frame(minWidth: CGFloat(integerLiteral: columWidths.0), maxWidth: CGFloat(integerLiteral: columWidths.0))
+                    .buttonStyle(BorderlessButtonStyle())
+                EditButton()
+                    .frame(minWidth: CGFloat(integerLiteral: columWidths.1), maxWidth: CGFloat(integerLiteral: columWidths.1))
+                    .buttonStyle(BorderlessButtonStyle())
+                Spacer()
+                    .frame(width:CGFloat(integerLiteral:spacerWidth))
             }
         }
+    }
+    
+    private func add() {
+        print("add requested")
+    }
+    
+    private func delete(offsets: IndexSet) {
+        print("delete requested")
+    }
+
+    private func move(source: IndexSet, destination: Int) {
+        print("move requested")
     }
 }
 

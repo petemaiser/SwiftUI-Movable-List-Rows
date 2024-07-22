@@ -12,9 +12,15 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: VStackView(), label: {Text("VStack of custom Item Views")})
-                    .padding()
+                Spacer()
+                Text("Sample Editable Item View")
+                    .bold()
                 NavigationLink(destination: ListView(), label: {Text("List of custom Item Views")})
+                    .padding()
+                Spacer()
+                Text("Similar Sample Views - Editing not implemented")
+                    .bold()
+                NavigationLink(destination: VStackView(), label: {Text("VStack of custom Item Views")})
                     .padding()
                 NavigationLink(destination: GridView(), label: {Text("Grid of custom Item Views")})
                     .padding()
@@ -26,6 +32,7 @@ struct ContentView: View {
                     .padding()
                 NavigationLink(destination: TableViewItems(), label: {Text("Table of Item Views")})
                     .padding()
+                Spacer()
             }
             .padding()
         }

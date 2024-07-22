@@ -14,18 +14,19 @@ struct GridView: View {
     
     let w1 = 200
     let w2 = 200
+    let sw = 50
     
     var body: some View {
         Grid
         {
             GridRow {
-                RowView(columWidths: (w1,w2), strings: ("Number", "Name"), isBold: true)
+                RowView(columWidths: (w1,w2), spacerWidth: sw, strings: ("Number", "Name"), isBold: true)
             }
             .bold()
             Divider()
             ForEach(itemStore.list.indices, id: \.self) { i in
                 GridRow {
-                    ItemView(columWidths: (w1,w2), item: itemStore.list[i])
+                    ItemView(columWidths: (w1,w2), spacerWidth: sw, item: itemStore.list[i])
                 }
             }
             Spacer()

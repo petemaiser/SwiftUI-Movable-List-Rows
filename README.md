@@ -1,2 +1,2 @@
 # movable-gridrows
-experimentation of movable/draggable rows in SwiftUI
+experimentation with and/or demostration of movable List rows in SwiftUI
