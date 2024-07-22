@@ -7,26 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B519FCAF2C4DCA58004B223B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B519FCAE2C4DCA58004B223B /* README.md */; };
-		B59028242C4DC9B700C39791 /* movable_gridrowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59028232C4DC9B700C39791 /* movable_gridrowsApp.swift */; };
-		B59028262C4DC9B700C39791 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59028252C4DC9B700C39791 /* ContentView.swift */; };
-		B59028282C4DC9B700C39791 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59028272C4DC9B700C39791 /* Item.swift */; };
-		B590282A2C4DC9B900C39791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B59028292C4DC9B900C39791 /* Assets.xcassets */; };
-		B590282D2C4DC9B900C39791 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B590282C2C4DC9B900C39791 /* Preview Assets.xcassets */; };
+		B52F20832C4DF775003EEEF8 /* movable_gridrowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */; };
+		B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20842C4DF775003EEEF8 /* ContentView.swift */; };
+		B52F20872C4DF776003EEEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20862C4DF776003EEEF8 /* Assets.xcassets */; };
+		B52F208A2C4DF776003EEEF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */; };
+		B5430CD62C4DF82B00EBB254 /* TableViewNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */; };
+		B5430CD82C4DF84000EBB254 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD72C4DF84000EBB254 /* GridView.swift */; };
+		B5430CDA2C4DF95100EBB254 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CD92C4DF95100EBB254 /* ItemStore.swift */; };
+		B5430CDC2C4EAD5C00EBB254 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */; };
+		B5430CDE2C4EAEF300EBB254 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDD2C4EAEF300EBB254 /* ListView.swift */; };
+		B5430CE02C4EB12E00EBB254 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CDF2C4EB12E00EBB254 /* RowView.swift */; };
+		B5430CE22C4EBF0700EBB254 /* ListGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE12C4EBF0700EBB254 /* ListGridView.swift */; };
+		B5430CE42C4EC08600EBB254 /* VStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE32C4EC08600EBB254 /* VStackView.swift */; };
+		B5430CE62C4EC75F00EBB254 /* TableViewCompact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */; };
+		B5430CE82C4EC9C700EBB254 /* TableViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */; };
+		B5430CEA2C4ED0E700EBB254 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B5430CE92C4ED0E700EBB254 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B519FCAE2C4DCA58004B223B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B59028202C4DC9B700C39791 /* movable-gridrows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movable-gridrows.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B59028232C4DC9B700C39791 /* movable_gridrowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movable_gridrowsApp.swift; sourceTree = "<group>"; };
-		B59028252C4DC9B700C39791 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B59028272C4DC9B700C39791 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		B59028292C4DC9B900C39791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B590282C2C4DC9B900C39791 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movable-gridrows.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movable_gridrowsApp.swift; sourceTree = "<group>"; };
+		B52F20842C4DF775003EEEF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B52F20862C4DF776003EEEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNormal.swift; sourceTree = "<group>"; };
+		B5430CD72C4DF84000EBB254 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		B5430CD92C4DF95100EBB254 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		B5430CDD2C4EAEF300EBB254 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B5430CDF2C4EB12E00EBB254 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		B5430CE12C4EBF0700EBB254 /* ListGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGridView.swift; sourceTree = "<group>"; };
+		B5430CE32C4EC08600EBB254 /* VStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackView.swift; sourceTree = "<group>"; };
+		B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCompact.swift; sourceTree = "<group>"; };
+		B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItems.swift; sourceTree = "<group>"; };
+		B5430CE92C4ED0E700EBB254 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B590281D2C4DC9B700C39791 /* Frameworks */ = {
+		B52F207C2C4DF775003EEEF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +54,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B59028172C4DC9B700C39791 = {
+		B52F20762C4DF775003EEEF8 = {
 			isa = PBXGroup;
 			children = (
-				B519FCAE2C4DCA58004B223B /* README.md */,
-				B59028222C4DC9B700C39791 /* movable-gridrows */,
-				B59028212C4DC9B700C39791 /* Products */,
+				B5430CE92C4ED0E700EBB254 /* README.md */,
+				B52F20812C4DF775003EEEF8 /* movable-gridrows */,
+				B52F20802C4DF775003EEEF8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B59028212C4DC9B700C39791 /* Products */ = {
+		B52F20802C4DF775003EEEF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B59028202C4DC9B700C39791 /* movable-gridrows.app */,
+				B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B59028222C4DC9B700C39791 /* movable-gridrows */ = {
+		B52F20812C4DF775003EEEF8 /* movable-gridrows */ = {
 			isa = PBXGroup;
 			children = (
-				B59028232C4DC9B700C39791 /* movable_gridrowsApp.swift */,
-				B59028252C4DC9B700C39791 /* ContentView.swift */,
-				B59028272C4DC9B700C39791 /* Item.swift */,
-				B59028292C4DC9B900C39791 /* Assets.xcassets */,
-				B590282B2C4DC9B900C39791 /* Preview Content */,
+				B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */,
+				B52F20842C4DF775003EEEF8 /* ContentView.swift */,
+				B5430CE32C4EC08600EBB254 /* VStackView.swift */,
+				B5430CDD2C4EAEF300EBB254 /* ListView.swift */,
+				B5430CD72C4DF84000EBB254 /* GridView.swift */,
+				B5430CE12C4EBF0700EBB254 /* ListGridView.swift */,
+				B5430CD52C4DF82B00EBB254 /* TableViewNormal.swift */,
+				B5430CE52C4EC75F00EBB254 /* TableViewCompact.swift */,
+				B5430CE72C4EC9C700EBB254 /* TableViewItems.swift */,
+				B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */,
+				B5430CDF2C4EB12E00EBB254 /* RowView.swift */,
+				B5430CD92C4DF95100EBB254 /* ItemStore.swift */,
+				B52F20862C4DF776003EEEF8 /* Assets.xcassets */,
+				B52F20882C4DF776003EEEF8 /* Preview Content */,
 			);
 			path = "movable-gridrows";
 			sourceTree = "<group>";
 		};
-		B590282B2C4DC9B900C39791 /* Preview Content */ = {
+		B52F20882C4DF776003EEEF8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B590282C2C4DC9B900C39791 /* Preview Assets.xcassets */,
+				B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,13 +103,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B590281F2C4DC9B700C39791 /* movable-gridrows */ = {
+		B52F207E2C4DF775003EEEF8 /* movable-gridrows */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B59028302C4DC9B900C39791 /* Build configuration list for PBXNativeTarget "movable-gridrows" */;
+			buildConfigurationList = B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-gridrows" */;
 			buildPhases = (
-				B590281C2C4DC9B700C39791 /* Sources */,
-				B590281D2C4DC9B700C39791 /* Frameworks */,
-				B590281E2C4DC9B700C39791 /* Resources */,
+				B52F207B2C4DF775003EEEF8 /* Sources */,
+				B52F207C2C4DF775003EEEF8 /* Frameworks */,
+				B52F207D2C4DF775003EEEF8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,25 +117,25 @@
 			);
 			name = "movable-gridrows";
 			productName = "movable-gridrows";
-			productReference = B59028202C4DC9B700C39791 /* movable-gridrows.app */;
+			productReference = B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B59028182C4DC9B700C39791 /* Project object */ = {
+		B52F20772C4DF775003EEEF8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					B590281F2C4DC9B700C39791 = {
+					B52F207E2C4DF775003EEEF8 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = B590281B2C4DC9B700C39791 /* Build configuration list for PBXProject "movable-gridrows" */;
+			buildConfigurationList = B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-gridrows" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +143,53 @@
 				en,
 				Base,
 			);
-			mainGroup = B59028172C4DC9B700C39791;
-			productRefGroup = B59028212C4DC9B700C39791 /* Products */;
+			mainGroup = B52F20762C4DF775003EEEF8;
+			productRefGroup = B52F20802C4DF775003EEEF8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B590281F2C4DC9B700C39791 /* movable-gridrows */,
+				B52F207E2C4DF775003EEEF8 /* movable-gridrows */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B590281E2C4DC9B700C39791 /* Resources */ = {
+		B52F207D2C4DF775003EEEF8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B519FCAF2C4DCA58004B223B /* README.md in Resources */,
-				B590282D2C4DC9B900C39791 /* Preview Assets.xcassets in Resources */,
-				B590282A2C4DC9B900C39791 /* Assets.xcassets in Resources */,
+				B5430CEA2C4ED0E700EBB254 /* README.md in Resources */,
+				B52F208A2C4DF776003EEEF8 /* Preview Assets.xcassets in Resources */,
+				B52F20872C4DF776003EEEF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B590281C2C4DC9B700C39791 /* Sources */ = {
+		B52F207B2C4DF775003EEEF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B59028262C4DC9B700C39791 /* ContentView.swift in Sources */,
-				B59028282C4DC9B700C39791 /* Item.swift in Sources */,
-				B59028242C4DC9B700C39791 /* movable_gridrowsApp.swift in Sources */,
+				B5430CE62C4EC75F00EBB254 /* TableViewCompact.swift in Sources */,
+				B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */,
+				B5430CDC2C4EAD5C00EBB254 /* ItemView.swift in Sources */,
+				B5430CD62C4DF82B00EBB254 /* TableViewNormal.swift in Sources */,
+				B5430CE42C4EC08600EBB254 /* VStackView.swift in Sources */,
+				B5430CE22C4EBF0700EBB254 /* ListGridView.swift in Sources */,
+				B5430CE82C4EC9C700EBB254 /* TableViewItems.swift in Sources */,
+				B5430CDE2C4EAEF300EBB254 /* ListView.swift in Sources */,
+				B5430CD82C4DF84000EBB254 /* GridView.swift in Sources */,
+				B5430CDA2C4DF95100EBB254 /* ItemStore.swift in Sources */,
+				B52F20832C4DF775003EEEF8 /* movable_gridrowsApp.swift in Sources */,
+				B5430CE02C4EB12E00EBB254 /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B590282E2C4DC9B900C39791 /* Debug */ = {
+		B52F208B2C4DF776003EEEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +252,7 @@
 			};
 			name = Debug;
 		};
-		B590282F2C4DC9B900C39791 /* Release */ = {
+		B52F208C2C4DF776003EEEF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +308,7 @@
 			};
 			name = Release;
 		};
-		B59028312C4DC9B900C39791 /* Debug */ = {
+		B52F208E2C4DF776003EEEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -293,7 +329,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maiser.movable-gridrows";
+				PRODUCT_BUNDLE_IDENTIFIER = "PJM.movable-gridrows";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,7 +337,7 @@
 			};
 			name = Debug;
 		};
-		B59028322C4DC9B900C39791 /* Release */ = {
+		B52F208F2C4DF776003EEEF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -322,7 +358,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "maiser.movable-gridrows";
+				PRODUCT_BUNDLE_IDENTIFIER = "PJM.movable-gridrows";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,25 +369,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B590281B2C4DC9B700C39791 /* Build configuration list for PBXProject "movable-gridrows" */ = {
+		B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-gridrows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B590282E2C4DC9B900C39791 /* Debug */,
-				B590282F2C4DC9B900C39791 /* Release */,
+				B52F208B2C4DF776003EEEF8 /* Debug */,
+				B52F208C2C4DF776003EEEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B59028302C4DC9B900C39791 /* Build configuration list for PBXNativeTarget "movable-gridrows" */ = {
+		B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-gridrows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B59028312C4DC9B900C39791 /* Debug */,
-				B59028322C4DC9B900C39791 /* Release */,
+				B52F208E2C4DF776003EEEF8 /* Debug */,
+				B52F208F2C4DF776003EEEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B59028182C4DC9B700C39791 /* Project object */;
+	rootObject = B52F20772C4DF775003EEEF8 /* Project object */;
 }
