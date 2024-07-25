@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B52F20832C4DF775003EEEF8 /* movable_gridrowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */; };
+		B52F20832C4DF775003EEEF8 /* movable_listrowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20822C4DF775003EEEF8 /* movable_listrowsApp.swift */; };
 		B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F20842C4DF775003EEEF8 /* ContentView.swift */; };
 		B52F20872C4DF776003EEEF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20862C4DF776003EEEF8 /* Assets.xcassets */; };
 		B52F208A2C4DF776003EEEF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movable-gridrows.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movable_gridrowsApp.swift; sourceTree = "<group>"; };
+		B52F207F2C4DF775003EEEF8 /* movable-listrows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movable-listrows.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52F20822C4DF775003EEEF8 /* movable_listrowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movable_listrowsApp.swift; sourceTree = "<group>"; };
 		B52F20842C4DF775003EEEF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B52F20862C4DF776003EEEF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B52F20892C4DF776003EEEF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		B52F20802C4DF775003EEEF8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */,
+				B52F207F2C4DF775003EEEF8 /* movable-listrows.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		B52F20812C4DF775003EEEF8 /* movable-gridrows */ = {
 			isa = PBXGroup;
 			children = (
-				B52F20822C4DF775003EEEF8 /* movable_gridrowsApp.swift */,
+				B52F20822C4DF775003EEEF8 /* movable_listrowsApp.swift */,
 				B52F20842C4DF775003EEEF8 /* ContentView.swift */,
 				B5430CDF2C4EB12E00EBB254 /* RowView.swift */,
 				B5430CDB2C4EAD5C00EBB254 /* ItemView.swift */,
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B52F207E2C4DF775003EEEF8 /* movable-gridrows */ = {
+		B52F207E2C4DF775003EEEF8 /* movable-listrows */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-gridrows" */;
+			buildConfigurationList = B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-listrows" */;
 			buildPhases = (
 				B52F207B2C4DF775003EEEF8 /* Sources */,
 				B52F207C2C4DF775003EEEF8 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = "movable-gridrows";
+			name = "movable-listrows";
 			productName = "movable-gridrows";
-			productReference = B52F207F2C4DF775003EEEF8 /* movable-gridrows.app */;
+			productReference = B52F207F2C4DF775003EEEF8 /* movable-listrows.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-gridrows" */;
+			buildConfigurationList = B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-listrows" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B52F207E2C4DF775003EEEF8 /* movable-gridrows */,
+				B52F207E2C4DF775003EEEF8 /* movable-listrows */,
 			);
 		};
 /* End PBXProject section */
@@ -153,7 +153,7 @@
 				B52F20852C4DF775003EEEF8 /* ContentView.swift in Sources */,
 				B5430CDC2C4EAD5C00EBB254 /* ItemView.swift in Sources */,
 				B5430CDA2C4DF95100EBB254 /* ViewModel.swift in Sources */,
-				B52F20832C4DF775003EEEF8 /* movable_gridrowsApp.swift in Sources */,
+				B52F20832C4DF775003EEEF8 /* movable_listrowsApp.swift in Sources */,
 				B5430CE02C4EB12E00EBB254 /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-gridrows" */ = {
+		B52F207A2C4DF775003EEEF8 /* Build configuration list for PBXProject "movable-listrows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B52F208B2C4DF776003EEEF8 /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-gridrows" */ = {
+		B52F208D2C4DF776003EEEF8 /* Build configuration list for PBXNativeTarget "movable-listrows" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B52F208E2C4DF776003EEEF8 /* Debug */,

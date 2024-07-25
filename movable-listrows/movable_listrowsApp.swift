@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct movable_gridrowsApp: App {
+struct movable_listrowsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(viewModel: ViewModel())
