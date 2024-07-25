@@ -14,7 +14,7 @@ struct Settings {
 
 struct Item : Identifiable {
     private(set) var id: Int = 0
-    private(set) var name: String = "Test Item"
+    private(set) var name: String = "Init Item"
 }
 
 class ViewModel: ObservableObject
