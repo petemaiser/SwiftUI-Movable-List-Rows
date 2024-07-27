@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ItemView: View {
-    let columWidths: (Int, Int)
+    let columnWidths: (Int, Int)
     let spacerWidth: (Int)
     let item: Item
     
     var body: some View {
-        RowView(columWidths: columWidths, spacerWidth: spacerWidth, strings: ("\(item.id)", item.name))
+        RowView(columnWidths: columnWidths, sideSpacerWidth: spacerWidth, strings: ("\(item.id)", item.name))
     }
 }
 
 #Preview {
-    ItemView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, item: Item())
+    ItemView(columnWidths: ViewModel().settings.columnWidths, spacerWidth: ViewModel().settings.sideSpacerWidth, item: Item())
 }

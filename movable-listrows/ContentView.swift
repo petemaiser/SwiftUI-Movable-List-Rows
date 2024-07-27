@@ -16,11 +16,11 @@ struct ContentView: View {
         List
         {
             // Header
-            RowView(columWidths: viewModel.settings.columWidths, spacerWidth: viewModel.settings.spacerWidth, strings: ("Number", "Name"), isBold: true)
+            RowView(columnWidths: viewModel.settings.columnWidths, sideSpacerWidth: viewModel.settings.sideSpacerWidth, strings: ("Number", "Name"), isBold: true)
             
             // Items
             ForEach(viewModel.items.indices, id: \.self) { i in
-                ItemView(columWidths: viewModel.settings.columWidths, spacerWidth: viewModel.settings.spacerWidth, item: viewModel.items[i])
+                ItemView(columnWidths: viewModel.settings.columnWidths, spacerWidth: viewModel.settings.sideSpacerWidth, item: viewModel.items[i])
             }
             .onDelete(perform: delete)
             .onMove(perform: move)
@@ -35,21 +35,19 @@ struct ContentView: View {
             // Edit Button
             HStack {
                 Spacer()
-                    .frame(width:CGFloat(integerLiteral:viewModel.settings.spacerWidth))
                 if editMode?.wrappedValue.isEditing == true
                 {
                     // Add button - when Editing only
                     Button(action: add) {
                         Image(systemName: "plus")
                     }
-                    .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.0), maxWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.0))
+                    .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columnWidths.0), maxWidth: CGFloat(integerLiteral: viewModel.settings.columnWidths.0))
                     .buttonStyle(BorderlessButtonStyle())
                 }
                 EditButton()
-                    .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.1), maxWidth: CGFloat(integerLiteral: viewModel.settings.columWidths.1))
+                    .frame(minWidth: CGFloat(integerLiteral: viewModel.settings.columnWidths.1), maxWidth: CGFloat(integerLiteral: viewModel.settings.columnWidths.1))
                     .buttonStyle(BorderlessButtonStyle())
                 Spacer()
-                    .frame(width:CGFloat(integerLiteral:viewModel.settings.spacerWidth))
             }
         }
     }

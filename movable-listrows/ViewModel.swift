@@ -8,8 +8,8 @@
 import Foundation
 
 struct Settings {
-    let columWidths = (125,200)
-    let spacerWidth = 50
+    let columnWidths = (125,200)
+    let sideSpacerWidth = 50
 }
 
 struct Item : Identifiable {

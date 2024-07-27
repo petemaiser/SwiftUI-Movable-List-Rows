@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct RowView: View {
-    let columWidths: (Int, Int)
+    let columnWidths: (Int, Int)
     let spacerWidth: Int
     let strings: (String, String)
 
     var isBold: Bool
     
-    init(columWidths: (Int, Int), spacerWidth: Int, strings: (String, String), isBold: Bool = false) {
-        self.columWidths = columWidths
-        self.spacerWidth = spacerWidth
+    init(columnWidths: (Int, Int), sideSpacerWidth: Int, strings: (String, String), isBold: Bool = false) {
+        self.columnWidths = columnWidths
+        self.spacerWidth = sideSpacerWidth
         self.strings = strings
         self.isBold = isBold
     }
@@ -24,24 +24,25 @@ struct RowView: View {
     var body: some View {
         HStack {
             Spacer()
-                .frame(width:CGFloat(integerLiteral:spacerWidth))
+                .frame(minWidth:CGFloat(integerLiteral:spacerWidth))
             Text(strings.0)
                 .font(.body)
-                .frame(minWidth: CGFloat(integerLiteral: columWidths.0), maxWidth: CGFloat(integerLiteral: columWidths.0))
-                .bold(isBold)
-            Text(strings.1)
-                .font(.body)
-                .frame(minWidth: CGFloat(integerLiteral: columWidths.1), maxWidth: CGFloat(integerLiteral: columWidths.1))
+                .frame(width: CGFloat(integerLiteral: columnWidths.0))
                 .bold(isBold)
             Spacer()
-                .frame(width:CGFloat(integerLiteral:spacerWidth))
+            Text(strings.1)
+                .font(.body)
+                .frame(width: CGFloat(integerLiteral: columnWidths.1))
+                .bold(isBold)
+            Spacer()
+                .frame(minWidth:CGFloat(integerLiteral:spacerWidth))
         }
     }
 }
 
 #Preview {
     VStack {
-        RowView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, strings: ("Number","Name"), isBold: true)
-        RowView(columWidths: ViewModel().settings.columWidths, spacerWidth: ViewModel().settings.spacerWidth, strings: ("\(Item().id)",Item().name))
+        RowView(columnWidths: ViewModel().settings.columnWidths, sideSpacerWidth: ViewModel().settings.sideSpacerWidth, strings: ("Number","Name"), isBold: true)
+        RowView(columnWidths: ViewModel().settings.columnWidths, sideSpacerWidth: ViewModel().settings.sideSpacerWidth, strings: ("\(Item().id)",Item().name))
     }
 }
