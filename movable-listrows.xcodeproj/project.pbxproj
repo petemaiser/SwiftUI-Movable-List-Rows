@@ -11,7 +11,6 @@
 		B5D36C8E2C52B7B6008E573E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D36C852C52B7B6008E573E /* Preview Assets.xcassets */; };
 		B5D36C8F2C52B7B6008E573E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D36C872C52B7B6008E573E /* Assets.xcassets */; };
 		B5D36C902C52B7B6008E573E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D36C882C52B7B6008E573E /* ContentView.swift */; };
-		B5D36C912C52B7B6008E573E /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D36C892C52B7B6008E573E /* ItemView.swift */; };
 		B5D36C922C52B7B6008E573E /* movable_listrowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D36C8A2C52B7B6008E573E /* movable_listrowsApp.swift */; };
 		B5D36C932C52B7B6008E573E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D36C8B2C52B7B6008E573E /* RowView.swift */; };
 		B5D36C942C52B7B6008E573E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D36C8C2C52B7B6008E573E /* ViewModel.swift */; };
@@ -23,7 +22,6 @@
 		B5D36C852C52B7B6008E573E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5D36C872C52B7B6008E573E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D36C882C52B7B6008E573E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B5D36C892C52B7B6008E573E /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		B5D36C8A2C52B7B6008E573E /* movable_listrowsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movable_listrowsApp.swift; sourceTree = "<group>"; };
 		B5D36C8B2C52B7B6008E573E /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		B5D36C8C2C52B7B6008E573E /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				B5D36C8A2C52B7B6008E573E /* movable_listrowsApp.swift */,
 				B5D36C882C52B7B6008E573E /* ContentView.swift */,
 				B5D36C8B2C52B7B6008E573E /* RowView.swift */,
-				B5D36C892C52B7B6008E573E /* ItemView.swift */,
 				B5D36C8C2C52B7B6008E573E /* ViewModel.swift */,
 			);
 			path = "movable-listrows";
@@ -153,7 +150,6 @@
 				B5D36C942C52B7B6008E573E /* ViewModel.swift in Sources */,
 				B5D36C922C52B7B6008E573E /* movable_listrowsApp.swift in Sources */,
 				B5D36C902C52B7B6008E573E /* ContentView.swift in Sources */,
-				B5D36C912C52B7B6008E573E /* ItemView.swift in Sources */,
 				B5D36C932C52B7B6008E573E /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

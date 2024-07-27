@@ -1,6 +1,6 @@
 //
 //  RowView.swift
-//  movable-gridrows
+//  movable-listrows
 //
 //  Created by Pete Maiser on 7/22/24.
 //
@@ -9,14 +9,13 @@ import SwiftUI
 
 struct RowView: View {
     let columnWidths: (Int, Int)
-    let spacerWidth: Int
+    let sideSpacerWidth: Int
     let strings: (String, String)
-
     var isBold: Bool
     
     init(columnWidths: (Int, Int), sideSpacerWidth: Int, strings: (String, String), isBold: Bool = false) {
         self.columnWidths = columnWidths
-        self.spacerWidth = sideSpacerWidth
+        self.sideSpacerWidth = sideSpacerWidth
         self.strings = strings
         self.isBold = isBold
     }
@@ -24,7 +23,7 @@ struct RowView: View {
     var body: some View {
         HStack {
             Spacer()
-                .frame(minWidth:CGFloat(integerLiteral:spacerWidth))
+                .frame(minWidth:CGFloat(integerLiteral:sideSpacerWidth))
             Text(strings.0)
                 .font(.body)
                 .frame(width: CGFloat(integerLiteral: columnWidths.0))
@@ -35,14 +34,14 @@ struct RowView: View {
                 .frame(width: CGFloat(integerLiteral: columnWidths.1))
                 .bold(isBold)
             Spacer()
-                .frame(minWidth:CGFloat(integerLiteral:spacerWidth))
+                .frame(minWidth:CGFloat(integerLiteral:sideSpacerWidth))
         }
     }
 }
 
 #Preview {
     VStack {
-        RowView(columnWidths: ViewModel().settings.columnWidths, sideSpacerWidth: ViewModel().settings.sideSpacerWidth, strings: ("Number","Name"), isBold: true)
-        RowView(columnWidths: ViewModel().settings.columnWidths, sideSpacerWidth: ViewModel().settings.sideSpacerWidth, strings: ("\(Item().id)",Item().name))
+        RowView(columnWidths: ContentView(viewModel: ViewModel()).columnWidths, sideSpacerWidth: ContentView(viewModel: ViewModel()).sideSpacerWidth, strings: ("Position","Name"), isBold: true)
+        RowView(columnWidths: ContentView(viewModel: ViewModel()).columnWidths, sideSpacerWidth: ContentView(viewModel: ViewModel()).sideSpacerWidth, strings: ("1",Item().name))
     }
 }

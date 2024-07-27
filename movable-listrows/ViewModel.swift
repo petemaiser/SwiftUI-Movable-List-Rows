@@ -1,16 +1,11 @@
 //
 //  ViewModel.swift
-//  movable-gridrows
+//  movable-listrows
 //
 //  Created by Pete Maiser on 7/21/24.
 //
 
 import Foundation
-
-struct Settings {
-    let columnWidths = (125,200)
-    let sideSpacerWidth = 50
-}
 
 struct Item : Identifiable {
     private(set) var id: Int = 0
@@ -19,7 +14,6 @@ struct Item : Identifiable {
 
 class ViewModel: ObservableObject
 {
-    var settings = Settings()
     private(set) var nextId = 0
       
     @Published var items : [Item]
@@ -35,7 +29,7 @@ class ViewModel: ObservableObject
     }
         
     func addItem() {
-        items.append(Item(id:nextId, name: "Another"))
         nextId += 1
+        items.append(Item(id:nextId, name: "Item #\(nextId)"))
     }
 }

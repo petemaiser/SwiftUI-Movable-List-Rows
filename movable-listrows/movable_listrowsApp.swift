@@ -1,6 +1,6 @@
 //
-//  movable_gridrowsApp.swift
-//  movable-gridrows
+//  movable_listrowsApp.swift
+//  movable-listrows
 //
 //  Created by Pete Maiser on 7/21/24.
 //
