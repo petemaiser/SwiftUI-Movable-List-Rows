@@ -21,6 +21,7 @@ struct ContentView: View {
             List {
                 // Header
                 RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: ("Position", "Name"), isBold: true)
+                    .alignmentGuide(.listRowSeparatorLeading) {_ in -20}
                 
                 // Items
                 ForEach(0..<viewModel.items.count, id: \.self) { i in
@@ -31,6 +32,7 @@ struct ContentView: View {
                     // let position = viewModel.items.firstIndex{$0 == viewModel.items[i]} ?? 0     // make item Equatable
 
                     RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: (position, name))
+                        .alignmentGuide(.listRowSeparatorLeading) {_ in -20}
                 }
                 .onDelete(perform: delete)
                 .onMove(perform: move)
