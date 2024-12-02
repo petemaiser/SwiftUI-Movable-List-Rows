@@ -16,48 +16,51 @@ struct ContentView: View {
     let sideSpacerWidth = 50
     
     var body: some View {
-        List
-        {
-            // Header
-            RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: ("Position", "Name"), isBold: true)
-            
-            // Items
-            ForEach(0..<viewModel.items.count, id: \.self) { i in
-                // use text variables (immutable)
-                let position = "\(i+1)"
-                let name = "\(viewModel.items[i].name)"
-                // because separate variables makes it easy to experiment with things like:
-                // let position = viewModel.items.firstIndex{$0 == viewModel.items[i]} ?? 0     // make item Equatable
+        VStack {
+            Text("List Rows that can be Edited!").font(.headline)
+            List {
+                // Header
+                RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: ("Position", "Name"), isBold: true)
+                
+                // Items
+                ForEach(0..<viewModel.items.count, id: \.self) { i in
+                    // use text variables (immutable)
+                    let position = "\(i+1)"
+                    let name = viewModel.items[i].name
+                    // because separate variables makes it easy to experiment with things like:
+                    // let position = viewModel.items.firstIndex{$0 == viewModel.items[i]} ?? 0     // make item Equatable
 
-                RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: (position, name))
-            }
-            .onDelete(perform: delete)
-            .onMove(perform: move)
-            .onChange(of: editMode!.wrappedValue) {
-                if editMode?.wrappedValue.isEditing == true {
-                    print("starting Editing Mode")
-                } else {
-                    print("ending Editing Mode")
+                    RowView(columnWidths: columnWidths, sideSpacerWidth: sideSpacerWidth, strings: (position, name))
                 }
-            }
-            
-            // Edit Button
-            HStack {
-                Spacer()
-                if editMode?.wrappedValue.isEditing == true
-                {
-                    // 'Add' button - when in Editing Mode only
-                    Button(action: add) {
-                        Image(systemName: "plus")
+                .onDelete(perform: delete)
+                .onMove(perform: move)
+                .onChange(of: editMode!.wrappedValue) {
+                    if editMode?.wrappedValue.isEditing == true {
+                        print("starting Editing Mode")
+                    } else {
+                        print("ending Editing Mode")
                     }
-                    .frame(minWidth: CGFloat(integerLiteral: columnWidths.0), maxWidth: CGFloat(integerLiteral: columnWidths.0))
-                    .buttonStyle(BorderlessButtonStyle())
                 }
-                EditButton()
-                    .frame(minWidth: CGFloat(integerLiteral: columnWidths.1), maxWidth: CGFloat(integerLiteral: columnWidths.1))
-                    .buttonStyle(BorderlessButtonStyle())
-                Spacer()
+                
+                // Edit Button
+                HStack {
+                    Spacer()
+                    if editMode?.wrappedValue.isEditing == true
+                    {
+                        // 'Add' button - when in Editing Mode only
+                        Button(action: add) {
+                            Image(systemName: "plus")
+                        }
+                        .frame(minWidth: CGFloat(integerLiteral: columnWidths.0), maxWidth: CGFloat(integerLiteral: columnWidths.0))
+                        .buttonStyle(BorderlessButtonStyle())
+                    }
+                    EditButton()
+                        .frame(minWidth: CGFloat(integerLiteral: columnWidths.1), maxWidth: CGFloat(integerLiteral: columnWidths.1))
+                        .buttonStyle(BorderlessButtonStyle())
+                    Spacer()
+                }
             }
+            .listStyle(DefaultListStyle())
         }
     }
     
